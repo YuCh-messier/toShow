@@ -1,0 +1,67 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* standard config */
+html{
+    font-size: 16px;
+}
+
+:root{
+    --inputW:250px;
+    --inputH:35px;
+}
+.containerB{
+    @apply flex flex-col items-center
+}
+
+.containerA{
+    @apply flex items-center
+}
+
+/* for signUpPages */
+.input{
+    @apply border-light border pl-md text-font3 rounded-xl text-black;
+    width: var(--inputW);
+    height: var(--inputH);
+}
+
+.input2{
+    @apply border-lightB border-b pl-md text-font3 text-black w-fit outline-none;
+    height: var(--inputH);
+}
+.input3{
+    @apply border-lightB border-b pl-md text-font2 text-black w-fit outline-none;
+    height: var(--inputH);
+}
+.button{
+    @apply text-white rounded text-center text-font3 bg-primaryL w-fit h-fit py-1 px-4 hover:cursor-pointer hover:bg-primaryH;
+}
+.button2{
+    @apply text-white rounded text-center text-font3 w-24 py-1 hover:cursor-pointer;
+}
+.button3{
+    @apply rounded text-center text-font3 w-24 py-1 hover:cursor-pointer;
+}
+.button4{
+    @apply rounded text-center px-xl py-2 font-bold hover:cursor-pointer;
+}
+.warning{
+    @apply text-red-500 text-font3 w-fit 
+}
+.tips{
+    @apply text-light text-font3 
+}
+.tips2{
+    @apply text-primary text-font3 hover:cursor-pointer hover:text-primaryH;
+}
+.header1{
+    @apply font-bold text-primary border-primary w-fit border-b-2
+}
+.tap{
+    @apply text-white text-font3 py-px w-16 text-center bg-primaryL rounded-md
+}
+.tap2{
+    @apply text-white text-font3 py-px px-2 text-center bg-primaryL rounded-md
+}
